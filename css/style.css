@@ -1,0 +1,65 @@
+body {
+	margin: 0;
+	font-family: 'Spartan', sans-serif;
+}
+
+.headernav {
+	/*background: yellow;*/
+	padding: 40px 0;
+	text-align: right;
+	font-size: 18px;
+}
+
+.headerlink {
+	text-decoration: none;
+	/*background: blue;*/
+	margin: 0 70px 0 0;
+	color: #E88A13;
+}
+
+.headline1 {
+	/*background-color: yellow;*/
+	margin: 50px 0 0 0;
+	padding: 50px;
+	color: grey;
+	font-size: 50px;
+	font-weight: 500;
+}
+
+.contactlinks {
+	color: purple;
+	margin: 0 100px;
+	padding: 0;
+	text-decoration: none;
+}
+
+.intro {
+	background: yellow;
+	font-size: 30px;
+	width: 500px;
+	margin: 0 0 60px 50px;
+}
+
+.afterintro {
+	margin: 0 0 0 50px;
+}
+
+img {
+	margin: 0;
+	padding: 0;
+}
+
+span {
+	color: purple;
+}
+
+.footernav {
+	background: rgba(0,0,0,0.1);
+	text-align: center;
+	padding: 20px;
+	margin: 0 0 30px 0;
+}
+
+footer {
+	text-align: center;
+}
