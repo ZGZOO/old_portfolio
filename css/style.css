@@ -5,7 +5,7 @@ body {
 
 .headernav {
 	/*background: yellow;*/
-	padding: 40px 0;
+	padding-top: 60px;
 	text-align: right;
 	font-size: 18px;
 }
@@ -14,16 +14,21 @@ body {
 	text-decoration: none;
 	/*background: blue;*/
 	margin: 0 70px 0 0;
-	color: #E88A13;
+	color: #FF5A1F;
 }
 
 .headline1 {
 	/*background-color: yellow;*/
 	margin: 50px 0 0 0;
 	padding: 50px;
-	color: grey;
+	color: black;
 	font-size: 50px;
 	font-weight: 500;
+}
+
+span {
+	color: #FF5A1F;
+	color: #F56422;
 }
 
 .contactlinks {
@@ -34,9 +39,9 @@ body {
 }
 
 .intro {
-	background: yellow;
-	font-size: 30px;
-	width: 500px;
+	/*background: #FFCA10;*/
+	font-size: 20px;
+	width: 700px;
 	margin: 0 0 60px 50px;
 }
 
@@ -45,21 +50,27 @@ body {
 }
 
 img {
+	/*background: blue;*/
+	vertical-align: middle;
 	margin: 0;
 	padding: 0;
 }
 
-span {
-	color: purple;
+.projectsection {
+	background-color: rgba(0,0,0,0.1);
+	width: 600px;
+	height: 200px;
+	border-radius: 20px;
 }
 
 .footernav {
 	background: rgba(0,0,0,0.1);
 	text-align: center;
 	padding: 20px;
-	margin: 0 0 30px 0;
+	margin-bottom: 50px;
 }
 
 footer {
 	text-align: center;
+	margin: 80px 0 50px 0;
 }
