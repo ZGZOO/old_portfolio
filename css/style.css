@@ -13,7 +13,8 @@ body {
 .headerlink {
 	text-decoration: none;
 	/*background: blue;*/
-	margin: 0 70px 0 0;
+	margin: 0 60px 0 0;
+	padding: 10px;
 	color: #FF5A1F;
 }
 
@@ -51,6 +52,7 @@ span {
 .sjsulink {
 	text-decoration: none;
 	vertical-align: middle;
+	padding: 5px;
 	color:#0252DE;
 }
 
@@ -93,4 +95,16 @@ footer {
 .homelink {
 	text-decoration: none;
 	color: red;
+}
+
+a:hover{
+	background: rgba(0,0,0,0.1);
+	padding:10px;
+	border-radius: 10px;
+}
+
+.sjsulink:hover{
+	background: #FFDF11;
+	border-radius: 10px;
+	padding:5px;
 }
