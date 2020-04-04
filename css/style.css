@@ -97,7 +97,7 @@ footer {
 	color: red;
 }
 
-a:hover{
+.headerlink:hover{
 	background: rgba(0,0,0,0.1);
 	padding:10px;
 	border-radius: 10px;
