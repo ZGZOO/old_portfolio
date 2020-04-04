@@ -89,3 +89,8 @@ footer {
 	text-align: center;
 	margin-top: 80px;
 }
+
+.homelink {
+	text-decoration: none;
+	color: red;
+}
