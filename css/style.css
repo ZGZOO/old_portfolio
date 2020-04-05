@@ -67,6 +67,26 @@ img {
 	border-radius: 20px;
 }
 
+.gotop {
+	/*background: green;*/
+	margin:50px 0 0 0;
+	padding: 20px 50px;
+	text-align: center;
+}
+
+.gotop a {
+	/*background: yellow;*/
+	text-decoration: none;
+	font-size:20px;
+	color: #F56422;
+	vertical-align: bottom;
+}
+
+.gotop img {
+	/*background: blue;*/
+	vertical-align: bottom;
+}
+
 .footernav {
 	background: rgba(0,0,0,0.1);
 	text-align: center;
@@ -81,15 +101,16 @@ img {
 	text-decoration: none;
 }
 
+
 footer p {
 	/*background: yellow;*/
-	padding: 30px 0;
+	padding: 50px 0 20px 0;
 	line-height: 30px;
 }
 
 footer {
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .homelink {
