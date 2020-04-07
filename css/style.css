@@ -15,7 +15,8 @@ body {
 	/*background: blue;*/
 	margin: 0 60px 0 0;
 	padding: 10px;
-	color: #FF5A1F;
+	/*color: #FF5A1F;*/
+	color:black;
 }
 
 .headline1 {
@@ -45,8 +46,14 @@ span {
 .intro a {
 	text-decoration: none;
 	vertical-align: middle;
-	padding: 5px;
+	padding:0 2px;
 	color:#0252DE;
+}
+
+.intro a:hover{
+	background: #FFDF11;
+	border-radius: 10px;
+	padding:8px 2px;
 }
 
 .afterintro {
@@ -58,6 +65,12 @@ img {
 	vertical-align: middle;
 	margin: 0;
 	padding: 0;
+}
+
+h2 {
+	background-color: yellow;
+	padding: 20px;
+	margin-bottom: 10px;
 }
 
 .projectsection {
@@ -104,7 +117,7 @@ img {
 
 footer p {
 	/*background: yellow;*/
-	padding: 50px 0 20px 0;
+	padding: 50px 0 25px 0;
 	line-height: 30px;
 }
 
@@ -124,8 +137,8 @@ footer {
 	border-radius: 10px;
 }
 
-.intro a:hover{
-	background: #FFDF11;
-	border-radius: 10px;
-	padding:5px;
+#about_page .aboutmeheadline {
+	background: blue;
 }
+
+
