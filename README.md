@@ -1,2 +1,2 @@
 # portfolio
-Zhijie (Jenny) Xu's website zhijiejennyxu.com
+Created a website as my personal portfolio
