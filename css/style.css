@@ -5,23 +5,23 @@ body {
 
 header{
 	padding: 100px 100px;
-/*	background: yellow;*/
+	/*background: yellow;*/
 	border-bottom: 3px dotted red;
 }
 
 header nav{
-/*	background: blue;*/
+	/*background: blue;*/
 	position: relative;
 }
 
 header nav div{
-/*	background: red;*/
+	/*background: red;*/
 	display: inline-block;
 	padding: 5px;
 }
 
 header nav div a{
-/*	background: blue;*/
+	/*background: green;*/
 	text-decoration: none;
 	color: black;
 	padding-bottom: 2px;
@@ -98,15 +98,15 @@ section {
 }
 
 .go_top_div {
-/*	background: green;*/
-	margin:20px 0 0 0;
-	padding: 0 100px;
+	/*background: green;*/
+	padding: 20px 100px;
+	text-align: center;
 }
 
 .go_top_div a {
-/*	background: yellow;*/
+	/*background: blue;*/
 	text-decoration: none;
-	font-size:15px;
+	font-size:13px;
 	color: black;
 }
 
@@ -118,32 +118,28 @@ section {
 	vertical-align: bottom;
 }
 
-/*.footernav {
-	background: rgba(0,0,0,0.1);
-	text-align: center;
-	padding: 20px;
-	margin-bottom: 50px;
-}
-
-.footernav a {
-	color: purple;
-	margin: 0 100px;
-	padding: 0;
-	text-decoration: none;
-}*/
-
 footer {
 	/*background: yellow;*/
-	margin: 40px 0;
+	border-top: 2px dotted red;
+	padding: 25px 100px;
 }
 
 .copyright {
-	background: blue;
+	/*background: blue;*/
+	font-size: 10px;
+	padding: 5px;
 	float: left;
 }
 
-.message {
+.contactinfo {
+	/*background: blue;*/
 	float: right;
+}
+
+.contactinfo a{
+	/*background: red;*/
+	margin: 12px;
+
 }
 
 .clearfix:after {
@@ -154,6 +150,3 @@ footer {
 	height: 0;
 	font-size: 0;
 }
-
-
-
