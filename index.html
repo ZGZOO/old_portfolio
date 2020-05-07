@@ -6,59 +6,66 @@
 	<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;800&display=swap" rel="stylesheet">
 	<link href="images/mylogo.png" rel="icon">
 	<title>Zhijie (Jenny) Xu</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<header>
-		<nav>
-			<div id="navhome">
-				<a href="index.html">Zhijie (Jenny) Xu</a>
-			</div>
-			<div id="navbar">
-				<a href="pages/about.html">About</a>
-				<a href="pages/projects.html">Projects</a>
-				<a href="pages/resume.html">Resume</a>
-			</div>
-		</nav>
+		<div id="navHomeDiv">
+			<img src="images/mylogo.png" alt="Zhijie (Jenny) Xu's Logo" title="Zhijie (Jenny) Xu's Logo" width="50px">
+			<a href="index.html">Zhijie (Jenny) Xu</a>
+		</div>
+
+		<div id="navBarDiv">
+			<a href="pages/about.html">About</a>
+			<a href="pages/projects.html">Projects</a>
+			<a href="pages/resume.html">Resume</a>
+		</div>
 	</header>
 
 	<main>
-		<p>Currently a junior studying computer science at <a href="http://www.sjsu.edu" target="_blank">SJSU<img src="images/Spartan.png" width="35px" height="35px" alt="San Jose State University Logo and Website" title="San Jose State University Logo and Website"></a></p>
-		<p>See my projects</p>
-		<div class="afterintro" id="projects">
-			<h2>Projects</h2>
-			<section>
-				<h2>2048 hackathon (Java)</h2>
-				<h3>Read more</h3>
+		<p class="mainp">Currently a junior studying computer science at <a href="http://www.sjsu.edu" target="_blank">SJSU<img src="images/Spartan.png" width="35px" height="35px" alt="San Jose State University Logo and Website" title="San Jose State University Logo and Website"></a></p>
+		<p class="mainp">See my projects</p>
+
+		<div class="projectsDiv">
+			<section class="sections" id="LPS_sec">
+				<p>Lapis-Papyrus-Scalpellus<br><br><small>Lapis-Papyrus-Scalpellus is a game I built. You play the game with the computer.</small></p>	
 			</section>
-			<section>
-				<h2>Budget Builder (Java)</h2>
-				<h3>Read more</h3>
+
+			<section class="sections">
+				<p>2048 hackathon (Java)</p>
 			</section>
-			<section>
-				<h2>Timer (Swift)</h2>
-				<h3>Read more</h3>
+
+			<section class="sections">
+				<p>Budget Builder (Java)</p>
 			</section>
-			<section>
-				<h2>Budget Game (Adobe XD)</h2>
-				<h3>Read more</h3>
+
+			<section class="sections">
+				<p>Timer (Swift)</p>
+			</section>
+
+			<section class="sections">
+				<p>Budget Game (Adobe XD)</p>
 			</section>
 		</div>
-		<div class="go_top_div">
+
+		<div id="go_top_div">
 			<a href="#"><img src="images/doodle.gif" alt="click Doodle Jump GIF to go back to the top" title="Doodle Jump GIF" height="120px">back to top</a>
 		</div>
 	</main>
 
 	<footer class="clearfix">
-		<p class="copyright">Coded by <span class="myname">Zhijie (Jenny) Xu</p>
+		<p id="copyrightpara">Coded by <span>Zhijie (Jenny) Xu</p>
 
 		<nav class="contactinfo">
-			<a href="mailto:jennyxu000@gmail.com" target="_blank" id="email"><img src="images/email.svg" width="25px" height="25px" alt="Jenny Xu's Gmail" title="Jenny Xu's Gmail"></a>
+			<a href="mailto:jennyxu000@gmail.com" target="_blank" id="email"><img src="images/email.svg" width="27px" alt="Jenny Xu's Gmail" title="Jenny Xu's Gmail"></a>
 
-			<a href="https://github.com/ZGZOO" target="_blank" id="github"><img src="images/github.svg" width="25px" height="25px" alt="Jenny Xu's GitHub page" title="Jenny Xu's GitHub page"></a>
+			<a href="https://github.com/ZGZOO" target="_blank" id="github"><img src="images/github.svg" width="27px" alt="Jenny Xu's GitHub page" title="Jenny Xu's GitHub page"></a>
 
-			<a href="https://www.linkedin.com/in/jennyzhijiexu/" target="_blank" id="linkedin"><img src="images/linkedin.svg" width="25px" height="25px" alt="Jenny Xu's LinkedIn page" title="Jenny Xu's LinkedIn page"></a>	
+			<a href="https://www.linkedin.com/in/jennyzhijiexu/" target="_blank" id="linkedin"><img src="images/linkedin.svg" width="27px" alt="Jenny Xu's LinkedIn page" title="Jenny Xu's LinkedIn page"></a>	
 		</nav>
 	</footer>
 </body>
+
+<script src="js/main.js"></script>
 </html>

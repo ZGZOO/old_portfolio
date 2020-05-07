@@ -1,151 +1,188 @@
 body {
-	margin: 0;
-	font-family: 'Spartan', sans-serif;
+  margin: 0;
+  font-family: "Spartan", sans-serif;
 }
 
-header{
-	padding: 100px 100px;
-	/*background: yellow;*/
-	border-bottom: 3px dotted red;
+header {
+  padding: 100px;
+  border-bottom: 3px dotted red;
+  overflow: hidden;
+  /* background: yellow; */
 }
 
-header nav{
-	/*background: blue;*/
-	position: relative;
+/* header div {
+  background: red;
+} */
+
+header div a {
+  text-decoration: none;
+  color: black;
 }
 
-header nav div{
-	/*background: red;*/
-	display: inline-block;
-	padding: 5px;
+#navHomeDiv {
+  float: left;
 }
 
-header nav div a{
-	/*background: green;*/
-	text-decoration: none;
-	color: black;
-	padding-bottom: 2px;
+#navBarDiv {
+  float: right;
 }
 
-#navhome a{
-	font-size: 38px;
+#navHomeDiv img {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-#navhome a:hover{
-	color: #0F52BA;
+#navHomeDiv a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 40px;
+  margin-left: 10px;
+  /* background: green; */
 }
 
-#navbar{
-	position: absolute;
-	right: 0;
-	margin: 16px 0;
+#navHomeDiv a:hover {
+  color: #0f52ba;
 }
 
-#navbar a{
-	font-size: 17px;
-	margin-left: 80px;
+#navBarDiv a {
+  font-size: 17px;
+  padding: 5px;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-bottom: 1px solid #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  /* background: green; */
 }
 
-#navbar a:hover{
-	color: #0F52BA;
-	border-bottom: 1px solid #0F52BA;
+#navBarDiv a:hover {
+  color: #0f52ba;
+  border-bottom: 1px solid #0f52ba;
 }
 
-main p {
-	background: #F5D360;
-	border-radius: 10px;
-	text-align: center;
-	font-size: 20px;
-	width: 640px;
-	margin: 0 0 60px 50px;
-	padding: 5px 0;
+main {
+  width: 90%;
+  margin: auto;
 }
 
-main p a {
-	text-decoration: none;
-	vertical-align: middle;
-	padding:0 2px;
-	color:#0252DE;
+.mainp {
+  background: #f5d360;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  width: 640px;
+  margin: 0 0 60px 50px;
+  padding: 5px 0;
 }
 
-main p a:hover{
-	background: #FFDF11;
-	border-radius: 10px;
-	padding:8px 2px;
+.mainp a {
+  text-decoration: none;
+  vertical-align: middle;
+  padding: 0 2px;
+  color: #0252de;
 }
 
-.afterintro {
-	margin: 0 0 0 50px;
+.mainp a:hover {
+  background: #ffdf11;
+  border-radius: 10px;
+  padding: 8px 2px;
+}
+
+.projectsDiv {
+  width: 800px;
+  margin: 0 auto;
+  background: rgb(169, 169, 250);
+}
+
+.sections {
+  width: 600px;
+  height: 400px;
+  margin: 30px auto;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
+  /* background: #58b2d6; */
+}
+
+.sections p {
+  padding: 20px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  /* background: #d0b3fa; */
+}
+
+.sections small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 100px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+#LPS_sec {
+  background-size: cover;
+  background-image: url("../images/LPS_pic.png");
 }
 
 img {
-	vertical-align: middle;
-	margin: 0;
-	padding: 0;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-	background-color: yellow;
-	padding: 20px;
-	margin-bottom: 10px;
+#go_top_div {
+  padding: 20px 0;
+  text-align: center;
+  /* background: green; */
 }
 
-section {
-	background-color: rgba(0,0,0,0.1);
-	width: 600px;
-	height: 200px;
-	border-radius: 20px;
+#go_top_div a {
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  /* background: blue; */
 }
 
-.go_top_div {
-	/*background: green;*/
-	padding: 20px 100px;
-	text-align: center;
+#go_top_div a:hover {
+  color: #0f52ba;
 }
 
-.go_top_div a {
-	/*background: blue;*/
-	text-decoration: none;
-	font-size:13px;
-	color: black;
-}
-
-.go_top_div a:hover{
-	color: #0F52BA;
-}
-
-.go_top_div img {
-	vertical-align: bottom;
+#go_top_div img {
+  vertical-align: bottom;
 }
 
 footer {
-	background: yellow;
-	border-top: 2px dotted red;
-	padding: 25px 100px;
+  border-top: 2px dotted red;
+  padding: 50px 100px;
+  overflow: hidden;
+  /* background: yellow; */
 }
 
-.copyright {
-	/*background: blue;*/
-	font-size: 11px;
-	padding: 6px 0;
-	float: left;
+#copyrightpara {
+  font-size: 12px;
+  padding: 6px 0;
+  float: left;
+  /* background: blue; */
+}
+
+#copyrightpara span {
+  color: #0f52ba;
 }
 
 .contactinfo {
-	/*background: blue;*/
-	float: right;
+  float: right;
+  /*background: blue;*/
 }
 
-.contactinfo a{
-	/*background: red;*/
-	margin: 13px;
+.contactinfo a {
+  margin: 20px;
+  /*background: red;*/
 }
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	content: " ";
-	clear: both;
-	height: 0;
-	font-size: 0;
+.contactinfo img:hover {
+  filter: invert(34%) sepia(1) saturate(16.1) hue-rotate(180deg) brightness(71%);
 }
