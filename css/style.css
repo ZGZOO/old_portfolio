@@ -5,7 +5,7 @@ body {
 
 header {
   padding: 100px;
-  border-bottom: 3px dotted red;
+  /* border-bottom: 3px dotted red; */
   overflow: hidden;
   /* background: yellow; */
 }
@@ -166,7 +166,7 @@ img {
 }
 
 footer {
-  border-top: 2px dotted red;
+  /* border-top: 2px dotted red; */
   padding: 50px 100px;
   overflow: hidden;
   /* background: yellow; */
