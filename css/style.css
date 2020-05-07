@@ -89,7 +89,7 @@ main {
 }
 
 .projectsDiv {
-  width: 800px;
+  width: 850px;
   margin: 0 auto;
   border-top: 5px solid #0252de;
   border-bottom: 5px solid #0252de;
@@ -98,7 +98,7 @@ main {
 
 .sections {
   position: relative;
-  width: 600px;
+  width: 640px;
   height: 400px;
   margin: 30px auto;
   border-radius: 17px;
@@ -134,8 +134,9 @@ main {
 }
 
 #LPS_sec {
-  background-size: cover;
   background-image: url("../images/LPS_pic.png");
+  background-size: cover;
+  background-position: center;
 }
 
 img {
