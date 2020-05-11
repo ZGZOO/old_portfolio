@@ -25,6 +25,7 @@ header div a {
 
 #navBarDiv {
   float: right;
+  /* background: green; */
 }
 
 #navHomeDiv img {
@@ -47,7 +48,7 @@ header div a {
 #navBarDiv a {
   font-size: 17px;
   padding: 5px;
-  margin-left: 80px;
+  margin-left: 60px;
   margin-top: 20px;
   border-bottom: 1px solid #ffffff;
   display: inline-block;
