@@ -10,9 +10,9 @@ header {
   /* background: yellow; */
 }
 
-header div {
-  /* background: red; */
-}
+/* header div {
+  background: red;
+} */
 
 header div a {
   text-decoration: none;
@@ -240,9 +240,9 @@ footer {
 }
 
 @media only screen and (max-width: 1180px) {
-  body {
-    /* background-color: lightblue; */
-  }
+  /* body {
+    background-color: lightblue;
+  } */
 
   #navHomeDiv {
     float: none;
@@ -263,9 +263,9 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
-  body {
-    /* background-color: tomato; */
-  }
+  /* body {
+    background-color: tomato;
+  } */
 
   header {
     padding: 100px 0 50px 0;
