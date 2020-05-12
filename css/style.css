@@ -10,9 +10,9 @@ header {
   /* background: yellow; */
 }
 
-/* header div {
-  background: red;
-} */
+header div {
+  /* background: red; */
+}
 
 header div a {
   text-decoration: none;
@@ -236,5 +236,73 @@ footer {
   to {
     right: 0px;
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  body {
+    /* background-color: lightblue; */
+  }
+
+  #navHomeDiv {
+    float: none;
+    /* background-color: rosybrown; */
+    text-align: center;
+  }
+
+  #navBarDiv {
+    float: none;
+    /* background-color: yellowgreen; */
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #navBarDiv a {
+    margin: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body {
+    /* background-color: tomato; */
+  }
+
+  header {
+    padding: 100px 0 50px 0;
+  }
+
+  #navHomeDiv a {
+    font-size: 26px;
+  }
+
+  #navHomeDiv img {
+    width: 40px;
+  }
+
+  #navBarDiv {
+    /* background-color: rebeccapurple; */
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 86px;
+    text-align: center;
+  }
+
+  #navBarDiv a {
+    /* background-color: rebeccapurple; */
+    display: block;
+    margin: 0 auto;
+    /* border: seagreen; */
+    margin-top: 18px;
+  }
+
+  .contactinfo {
+    float: none;
+    text-align: center;
+  }
+
+  #copyrightpara {
+    float: none;
+    text-align: center;
+    margin-top: 30px;
   }
 }
