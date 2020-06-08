@@ -37,7 +37,7 @@ Below is the link of the folder, where I put all the pictures of wireframes of m
 
 ## Time/Priority Matrix 
 
-[A picture of my time/priority matrix]()
+[A picture of my time/priority matrix](https://res.cloudinary.com/headincloud/image/upload/v1591651665/SEI_portfolio_time_priority_matrix/time_priority_matrix.jpg)
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
