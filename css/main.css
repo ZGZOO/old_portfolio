@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.entrance-page {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1542888743-a0323a8bd3df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entrance-page main {
+  margin: 0;
+  padding: 0;
+  border: 2px solid gold;
+  text-align: center;
+  line-height: 5em;
+}
