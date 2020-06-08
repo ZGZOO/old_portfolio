@@ -27,14 +27,13 @@ Some layout inspired by [Matt's portfolio](https://mattfarley.ca/)
 [A list of my projects](https://docs.google.com/spreadsheets/d/1gTe7FxngTNHHzZ62snW1R6GwnuFIoltFxoB_O8UbkIc/edit?usp=sharing)
 
 ## Wireframes
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
+Below is the link of the folder, where I put all the pictures of wireframes of mobile, tablet, and laptop. Each picture has a specific name describing what design it is.
 
-- [Mobile]()
-- [Desktop]()
+- [Wireframes for Mobile, Tablet, Laptop (all pics in one folder)](https://cloudinary.com/console/c-1abfff2f95a709c3a7ad994c563655/media_library/folders/be0cdd5433b8c9c2b8156cae9fd1ac57)
 
 ## Time/Priority Matrix 
 
-[Link]()
+[A picture of my time/priority matrix]()
 
 Include a full list of features that have been prioritized based on the `Time and Priority` Matix.  This involves drawing a a square.  In the middle of the square, on the x axis draw a line.  The most left part of the line should start with 0hrs and the end of the line should include 2hrs.  This line will be used to estimate how much time any one feature will take to complete. 
 
@@ -46,18 +45,25 @@ Once complete tally up the time and determine how long the project will take to 
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+The functionality will then be divided into two separate lists: MPV and PostMVP.  MVP is carefully decided because the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP (examples)
+#### MVP
 
-- Pull data using google json api
+- (Mobile, Tablet) Click hamburger icon, hidden options show up from the bottom, stacking on each other
+- (Laptop) Regular nav bar (about, skills, projects, contact me)
+- (Mobile, Tablet) Entrance page, swipe up (or click) to see more
+- (Laptop) Entrance page, scroll up (or click) to see more
+- (All) Click on each option, automatically go to that section smoothly
+- Pull data(my projects list) using google json api
 - Render data on page 
-- Allow user to choose favorites 
-- Save their choices in firebase
+- (Mobile, Tablet) Projects section, click each card, then skill used, live page button, github source button will appear
+- (Laptop) Projects section, hover on each card, then skill used, live page button, github source button will appear
+- Contact me section, little animation when the users are about to type in their information
+- A convenient button for users to go to the top of the page smoothly
 
 #### PostMVP 
 
-- Anything else that is not MVP
+- Anything else that is not MVP (don't have any yet)
 
 ## Functional Components
 
@@ -68,32 +74,31 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### MVP
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Hamburger | H | 1hr | 1.5hr | -hr|
+| Hamburger | H | 1.5hr | -hr | -hr|
+| Regular Nav | H | 1.5hr | -hr | -hr|
+| Entrance animation | H | 2hr | -hr | -hr|
+| Smooth scrolls | H | 2hr | -hr | -hr|
 | Project Previews | H | 3hr | -hr | -hr|
-| Regular Nav | H | H | -hr | -hr|
-| Adding Form | H | 1.5hr| -hr | -hr |
-| Other sections and flex| M | 4hr | 2hr | -hr|
-| Working with API | H | 3hrs| 2hr | -hr |
+| Contact Me Form | H | 1.5hr| -hr | -hr |
+| Working with API | H | 3hr| -hr | -hr |
 | Responsive | H | 3hr | -hr | -hr|
-| Social Media Icons | L | 1hr | -hr | -hr|
-| Total | H | 15.5hrs| -hrs | -hrs |
+| Other sections and flex| M | 2hr | -hr | -hr|
+| Social Media Icons | L | 0.5hr | -hr | -hr|
+| Total | H | 20hrs| -hrs | -hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Project Hover | L | 3hr | -hr | -hr|
-| Banner letters wiggle | L | 1hr | -hr | -hr|
-| Interactive Banner | M | 4hr | -hr | -hr|
-| Materialize | H | 4hr | -hr | -hr|
 | Bootstrap | H | 4hr | -hr | -hr|
-| Make own icon | L | 4hr | -hr | -hr|
-| Total | H | 20hrs| -hrs | -hrs |
+| Banner letters wiggle | L | 1hr | -hr | -hr|
+| Make own icon | L | 2hr | -hr | -hr|
+| Total | H | 7hrs| -hrs | -hrs |
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
+ Here is the list of all supporting libraries and their roles in the project. 
 
- 1. [jQuery](https://code.jquery.com/)
- 2. [Bootstrap](https://getbootstrap.com/)
+ 1. [jQuery](https://code.jquery.com/) (write less JavaScript code, yet do powerful jobs on DOM)
+ 2. [Bootstrap](https://getbootstrap.com/) (CSS library for quick and beautiful webpage design)
 
 
 ## Code Snippet
