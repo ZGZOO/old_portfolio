@@ -84,8 +84,8 @@ Time frames are also key in the development cycle. You have limited time to code
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
 | Hamburger               |    H     |     1.5hr      |      -hr      |     -hr     |
-| Regular Nav             |    H     |     1.5hr      |     1.5hr     |    1.5hr    |
-| Entrance animation      |    H     |      2hr       |      -hr      |     -hr     |
+| Regular Nav             |    H     |     1.5hr      |      -hr      |     -hr     |
+| Entrance animation      |    H     |      2hr       |     1.5hr     |    1.5hr    |
 | Smooth scrolls          |    H     |      2hr       |      -hr      |     -hr     |
 | Project Previews        |    H     |      3hr       |      -hr      |     -hr     |
 | Contact Me Form         |    H     |     1.5hr      |      -hr      |     -hr     |
