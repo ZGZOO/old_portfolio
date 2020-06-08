@@ -29,7 +29,11 @@ Some layout inspired by [Matt's portfolio](https://mattfarley.ca/)
 ## Wireframes
 Below is the link of the folder, where I put all the pictures of wireframes of mobile, tablet, and laptop. Each picture has a specific name describing what design it is.
 
-- [Wireframes for Mobile, Tablet, Laptop (all pics in one folder)](https://cloudinary.com/console/c-1abfff2f95a709c3a7ad994c563655/media_library/folders/be0cdd5433b8c9c2b8156cae9fd1ac57)
+- [Mobile Design 1](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%201.jpg)
+- [Mobile Design 2](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%202.jpg)
+- [Mobile Design 3](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%203.jpg)
+- [Tablet and Laptop Design](https://res.cloudinary.com/headincloud/image/upload/v1591646433/SEI_portfolio_wireframes/Tablet%20and%20Laptop%20Design.jpg)
+- [Laptop Design 2](https://res.cloudinary.com/headincloud/image/upload/v1591646431/SEI_portfolio_wireframes/Laptop%20Design%202.jpg)
 
 ## Time/Priority Matrix 
 
@@ -63,7 +67,9 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 #### PostMVP 
 
-- Anything else that is not MVP (don't have any yet)
+- Use Bootstrap
+- Button Animation with cool effects
+- Make my own icon to add personality to the webpage
 
 ## Functional Components
 
@@ -90,7 +96,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Bootstrap | H | 4hr | -hr | -hr|
-| Banner letters wiggle | L | 1hr | -hr | -hr|
+| Button Animation | L | 1hr | -hr | -hr|
 | Make own icon | L | 2hr | -hr | -hr|
 | Total | H | 7hrs| -hrs | -hrs |
 
