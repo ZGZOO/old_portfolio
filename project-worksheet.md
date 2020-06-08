@@ -29,11 +29,11 @@ Some layout inspired by [Matt's portfolio](https://mattfarley.ca/)
 ## Wireframes
 Below is the link of the folder, where I put all the pictures of wireframes of mobile, tablet, and laptop. Each picture has a specific name describing what design it is.
 
-- [Mobile Design 1](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%201.jpg)
-- [Mobile Design 2](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%202.jpg)
-- [Mobile Design 3](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%203.jpg)
-- [Tablet and Laptop Design](https://res.cloudinary.com/headincloud/image/upload/v1591646433/SEI_portfolio_wireframes/Tablet%20and%20Laptop%20Design.jpg)
-- [Laptop Design 2](https://res.cloudinary.com/headincloud/image/upload/v1591646431/SEI_portfolio_wireframes/Laptop%20Design%202.jpg)
+- [Mobile Design 1 (Hamburger icon)](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%201.jpg)
+- [Mobile Design 2 (Entrance page, nav items)](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%202.jpg)
+- [Mobile Design 3 (Projects section & Contact Me section)](https://res.cloudinary.com/headincloud/image/upload/v1591646432/SEI_portfolio_wireframes/Mobile%20design%203.jpg)
+- [Tablet and Laptop Design (Responsive Layout)](https://res.cloudinary.com/headincloud/image/upload/v1591646433/SEI_portfolio_wireframes/Tablet%20and%20Laptop%20Design.jpg)
+- [Laptop Design 2 (Projects section layout)](https://res.cloudinary.com/headincloud/image/upload/v1591646431/SEI_portfolio_wireframes/Laptop%20Design%202.jpg)
 
 ## Time/Priority Matrix 
 
