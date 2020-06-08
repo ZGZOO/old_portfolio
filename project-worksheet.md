@@ -17,23 +17,20 @@ I am **responsible** for scheduling time with my squad to seek approval for each
 
 
 ## Project Description
-//Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
-This project is my portfolio as a webpage, containing my about, my projects and a section to contact me!
+This project is my portfolio as a SPA (single page app), containing my about, my skills, my projects and a section to contact me!
+
+Entrance animation inspired by [Haley's portfolio](https://hbubley.github.io/unitOneProject/projectFrame/)
+
+Some layout inspired by [Matt's portfolio](https://mattfarley.ca/)
 
 ## Google Sheet
-https://docs.google.com/spreadsheets/d/1gTe7FxngTNHHzZ62snW1R6GwnuFIoltFxoB_O8UbkIc/edit?usp=sharing
+[A list of my projects](https://docs.google.com/spreadsheets/d/1gTe7FxngTNHHzZ62snW1R6GwnuFIoltFxoB_O8UbkIc/edit?usp=sharing)
 
 ## Wireframes
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Do not include the actual image and have it render on the page.  
 
-- [Mobile](https://i.imgur.com/P3iBEZf.jpg)
-- [Desktop](https://i.imgur.com/xpOWo0E.jpg)
-
-Wireframing Resources:
-
-- [Mockflow](https://mockflow.com/app/#Wireframe)
-- [Figma](https://www.figma.com/)
-
+- [Mobile]()
+- [Desktop]()
 
 ## Time/Priority Matrix 
 
@@ -94,9 +91,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
- //add bootstramp
- //add SaaS
- //jQuery
+
+ 1. [jQuery](https://code.jquery.com/)
+ 2. [Bootstrap](https://getbootstrap.com/)
+
 
 ## Code Snippet
 
