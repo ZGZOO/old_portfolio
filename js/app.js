@@ -4,11 +4,14 @@ $(() => {
   $(".official-contents").hide();
 
   $("#welcomeButton").on("click", () => {
-    // $(".entrance-page").hide();
     // Slide up animation: entrance page gone, official contents appear
-    $(".entrance-page").slideUp(600, () => {
+    $(".entrance-page").fadeOut("300", "linear", () => {
       $(".official-contents").show();
       console.log("clicked?");
     });
+  });
+
+  $(".hamburger").on("click", () => {
+    console.log("hamburger");
   });
 });
