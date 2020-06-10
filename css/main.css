@@ -175,12 +175,13 @@ body {
   transition: 0.5s;
   border: 1px solid #3c546d;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 .contact_form_text:focus {
   /* h-offset v-offset blur spread color */
   box-shadow: 0 0 10px 4px #34495e;
+  font-size: 17px;
 }
 
 textarea.contact_form_text {
