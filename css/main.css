@@ -41,26 +41,22 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+/* Mobile header */
 .header {
   /* size */
   width: 100vw;
   height: 8vh;
+  /* General appearance */
+  background-color: rgb(193, 235, 236);
   /* flex */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* General appearance */
-  background-color: rgb(193, 235, 236);
   /* grid */
   grid-area: header;
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-:root {
-  --header-height: calc(8vw * 8vh);
 }
 
 .header_title_wrapper {
@@ -84,12 +80,23 @@ body {
 /* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
 
 /* Mobile Footer Navbar */
+.footer {
+  grid-area: footer;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
 .mobile_footer_navbar {
+  /* position */
   position: fixed;
   bottom: 0;
+  /* general appearance */
   width: 100vw;
   height: 9vh;
+  padding: 0 8px;
   background-color: rgb(190, 189, 189, 0.3);
+  /* flex */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +116,7 @@ body {
 }
 
 .mobile_footer_navbar div a:active {
-  border-bottom: 1px solid blueviolet;
+  border-bottom: 2px solid blueviolet;
 }
 
 .mobile_footer_navbar div i {
@@ -121,29 +128,26 @@ body {
   color: red;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+/* set height variable */
+/* :root {
+  --header-height: 50vh;
+  --footer-height: 9vh;
+} */
+
 /* Main Section */
 .main_section {
   grid-area: main_content;
-  position: sticky;
-  bottom: var(--footer-height);
-  min-height: calc(100vh - var(--footer-height));
-  margin-top: calc(0px - var(--header-height));
-}
-
-/* About */
-.about {
-  margin-top: 8vh;
-}
-
-.footer {
-  grid-area: footer;
-  position: sticky;
-  bottom: 0;
-  z-index: 1;
-}
-:root {
-  --footer-height: calc(7.5vw);
+  position: fixed;
+  top: 78px;
+  bottom: 90px;
+  overflow: scroll;
+  /* border: 1px solid blue; */
+  height: auto;
 }
 
 /* Below is how to limit scroll area */
 /* https://stackoverflow.com/questions/10056583/fixed-header-footer-and-sidebars-with-scrolling-content-area-in-center */
+
+/* Contact Me Section Reference */
+/* https://www.w3schools.com/html/html_forms.asp */
