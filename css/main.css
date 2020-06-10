@@ -54,9 +54,8 @@ body {
   align-items: center;
   /* grid */
   grid-area: header;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 0;
 }
 
 .header_title_wrapper {
