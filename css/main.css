@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   box-sizing: border-box;
-  /* border: 1px solid gold; */
+  /* border: 1px solid red; */
 }
 
-.entrance-page {
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+/* Entrance Page */
+.entrance_page {
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1542888743-a0323a8bd3df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
@@ -13,33 +20,130 @@
   align-items: center;
 }
 
-.entrance-page main {
+.entrance_page main {
   margin: 0;
   padding: 0;
-  border: 2px solid gold;
   text-align: center;
   line-height: 5em;
+  /* border: 2px solid gold; */
 }
 
 .hide {
   display: none;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.3);
+.official_contents_wrapper {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main_content"
+    "footer";
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
-.nav-bar {
+.header {
+  /* size */
+  width: 100vw;
+  height: 8vh;
+  /* flex */
   display: flex;
-  justify-content: space-between;
-  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  /* General appearance */
+  background-color: rgb(193, 235, 236);
+  /* grid */
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.nav-bar p {
-  margin: auto 0;
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+:root {
+  --header-height: calc(8vw * 8vh);
 }
-.nav-bar a {
-  font-size: 30px;
-  color: seagreen;
+
+.header_title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_title_wrapper img {
+  width: 2.5em;
+}
+
+.header_title_wrapper h1 {
+  margin: 0;
+  font-size: 2em;
+  align-self: center;
+}
+
+/* https://css-tricks.com/building-resizeable-components-relative-css-units/ */
+/* https://www.smashingmagazine.com/2019/08/bottom-navigation-pattern-mobile-web-pages/ */
+/* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+
+/* Mobile Footer Navbar */
+.mobile_footer_navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 9vh;
+  background-color: rgb(190, 189, 189, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile_footer_navbar div {
+  flex: 1;
+  text-align: center;
+  /* border: 1px gold solid; */
+}
+
+.mobile_footer_navbar div a {
   text-decoration: none;
+  font-size: 3.3vw;
+  display: block;
+  padding-top: 4px;
 }
+
+.mobile_footer_navbar div a:active {
+  border-bottom: 1px solid blueviolet;
+}
+
+.mobile_footer_navbar div i {
+  font-size: 7.5vw;
+  display: block;
+}
+
+.mobile_footer_navbar div i:active {
+  color: red;
+}
+
+/* Main Section */
+.main_section {
+  grid-area: main_content;
+  position: sticky;
+  bottom: var(--footer-height);
+  min-height: calc(100vh - var(--footer-height));
+  margin-top: calc(0px - var(--header-height));
+}
+
+/* About */
+.about {
+  margin-top: 8vh;
+}
+
+.footer {
+  grid-area: footer;
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+:root {
+  --footer-height: calc(7.5vw);
+}
+
+/* Below is how to limit scroll area */
+/* https://stackoverflow.com/questions/10056583/fixed-header-footer-and-sidebars-with-scrolling-content-area-in-center */

@@ -110,6 +110,7 @@ Here is the list of all supporting libraries and their roles in the project.
 
 1.  [jQuery](https://code.jquery.com/) (write less JavaScript code, yet do powerful jobs on DOM)
 2.  [Bootstrap](https://getbootstrap.com/) (CSS library for quick and beautiful webpage design)
+3.  [Font Awesome](https://fontawesome.com/) (Beautiful little icons)
 
 ## Code Snippet
 
