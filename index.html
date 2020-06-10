@@ -117,8 +117,33 @@
           </section>
         </div>
         <!-- Contact Me section -->
-        <div class="contact_me" id="contact_me">
+        <div class="contact_me_section" id="contact_me">
           <h4>Contact Me</h4>
+          <form class="contact_form" action="index.html" method="post">
+            <input
+              type="text"
+              class="contact_form_text"
+              placeholder="Name (First & Last)"
+              required
+            />
+            <input
+              type="email"
+              class="contact_form_text"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="text"
+              class="contact_form_text"
+              placeholder="Phone (optional)"
+            />
+            <textarea
+              class="contact_form_text"
+              placeholder="Message"
+              required
+            ></textarea>
+            <input type="submit" class="contact_form_button" value="Send" />
+          </form>
         </div>
       </main>
 
@@ -142,7 +167,7 @@
 
           <div>
             <i class="far fa-handshake"></i>
-            <a href="#contact">Contact</a>
+            <a href="#contact_me">Contact</a>
           </div>
 
           <div>
