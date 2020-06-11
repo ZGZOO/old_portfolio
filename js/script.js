@@ -78,4 +78,42 @@ $(() => {
   //   window.location = $(this).find("a").attr("href");
   //   return false;
   // });
+
+  //pull data from google sheet via API call
+  const sheetUrl =
+    "https://docs.google.com/spreadsheets/d/1gTe7FxngTNHHzZ62snW1R6GwnuFIoltFxoB_O8UbkIc/edit?usp=sharing";
+
+  const sheetAsJSON =
+    "https://spreadsheets.google.com/feeds/list/1gTe7FxngTNHHzZ62snW1R6GwnuFIoltFxoB_O8UbkIc/od6/public/values?alt=json";
+
+  $.ajax({
+    url: sheetAsJSON,
+  })
+    .then((data) => {
+      // console.log("data", data);
+      const projects = data.feed.entry.map((project) => {
+        return {
+          title: project.gsx$title.$t,
+          image: project.gsx$image.$t,
+          description: project.gsx$description.$t,
+          url: project.gsx$url.$t,
+        };
+      }); //map ends
+      app(projects);
+      //console.log("projects", projects);
+    })
+    // .catch is meant to handle/catch errors
+    .catch((err) => console.log("err", err));
+
+  function app(projectsArr) {
+    console.log("inside app - projectsArr", projectsArr);
+    projectsArr.forEach((project) => {
+      //create an h3
+      let title = $("<h3>");
+      //assign the title the value stored in project.title
+      title.text(project.title);
+      //append the title to the body
+      $("body").append(title);
+    });
+  }
 });
