@@ -10,10 +10,10 @@ $(() => {
   const $hamburgerbar3 = $(".bar3");
   const $dropdown = $(".dropdown");
   const $dropdown_btn = $(".dropdown_flex_container div");
-  const $about_btn = $("#about_btn");
-  const $skills_btn = $("#skills_btn");
-  const $projects_btn = $("#projects_btn");
-  const $contact_btn = $("#contact_btn");
+  const $about_btn = $(".about_btn");
+  const $skills_btn = $(".skills_btn");
+  const $projects_btn = $(".projects_btn");
+  const $contact_btn = $(".contact_btn");
 
   // $official_contents.hide();
   $entrance_page.hide();
@@ -43,6 +43,7 @@ $(() => {
   });
 
   //hamburger item click auto scroll to a specific div
+  //https://stackoverflow.com/questions/19012495/smooth-scroll-to-div-id-jquery
   $about_btn.on("click", () => {
     $(".main_section").animate(
       { scrollTop: $("#about").offset().top - 60 },

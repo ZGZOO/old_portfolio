@@ -67,6 +67,10 @@ body {
   align-items: center;
 }
 
+.laptop_navbar_container {
+  display: none;
+}
+
 .header_title_wrapper img {
   width: 2.5em;
 }
@@ -397,5 +401,43 @@ textarea.contact_form_text {
 }
 
 @media only screen and (min-width: 1024px) {
-  
+  .hamburger,
+  .dropdown {
+    display: none;
+  }
+
+  .header {
+    height: 90px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main_section {
+    top: 90px;
+  }
+
+  .laptop_navbar_container {
+    display: flex;
+    width: 35%;
+  }
+
+  .laptop_navbar_container div {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    margin: 0 13px;
+    flex: 1 1;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .laptop_navbar_container div:hover,
+  .laptop_navbar_container div:active {
+    background-color: #ecd3c3;
+    color: #557391;
+    border-radius: 30px;
+    /* font-weight: bold; */
+  }
 }
