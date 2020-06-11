@@ -68,31 +68,33 @@
         </div>
 
         <div class="header_title_wrapper">
-          <img src="images/mymemoji.png" alt="My Memoji" />
+          <img src="images/mymemoji.png" alt="My Memoji" title="My Memoji" />
           <h1>Jenny Xu</h1>
         </div>
       </header>
 
       <!-- drop down menu -->
       <nav class="dropdown">
-        <div>
-          <i class="far fa-address-card"></i>
-          <a href="#about">ABOUT</a>
-        </div>
+        <div class="dropdown_flex_container">
+          <div id="about_btn">
+            <i class="far fa-address-card"></i>
+            <a href="#about">ABOUT</a>
+          </div>
 
-        <div>
-          <i class="fas fa-lock-open"></i>
-          <a href="#skills">SKILLS</a>
-        </div>
+          <div id="skills_btn">
+            <i class="fas fa-lock-open"></i>
+            <a href="#skills">SKILLS</a>
+          </div>
 
-        <div>
-          <i class="fas fa-project-diagram"></i>
-          <a href="#projects">PROJECTS</a>
-        </div>
+          <div id="projects_btn">
+            <i class="fas fa-project-diagram"></i>
+            <a href="#projects">PROJECTS</a>
+          </div>
 
-        <div>
-          <i class="far fa-handshake"></i>
-          <a href="#contact_me">CONTACT</a>
+          <div id="contact_btn">
+            <i class="far fa-handshake"></i>
+            <a href="#contact_me">CONTACT</a>
+          </div>
         </div>
       </nav>
 
@@ -102,9 +104,9 @@
         <div class="about" id="about">
           <h4>About</h4>
           <section>
-            Hi, I am Jenny! A web developer from San Jose, California. I love
-            making beautiful and easy-to-use websites. When I am not coding, you
-            will find me cooking my favourite dishes.
+            Hi, I am Jenny! A web developer located in San Jose, California. I
+            love making beautiful and easy-to-use websites. When I am not
+            coding, you will find me cooking my favourite dishes.
           </section>
         </div>
         <!-- Skills section -->
@@ -147,7 +149,7 @@
           </section>
         </div>
         <!-- Contact Me section -->
-        <div class="contact_me_section" id="contact_me">
+        <div class="contact_me" id="contact_me">
           <h4>Contact Me</h4>
           <form class="contact_form" action="index.html" method="post">
             <!-- Have 'required' to make it required -->

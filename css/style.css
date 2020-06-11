@@ -48,8 +48,8 @@ body {
   width: 100vw;
   height: 60px;
   /* General appearance */
-  background-color: rgb(193, 235, 236);
-  border: 1px solid gold;
+  background-color: #557391;
+  /* border: 1px solid gold; */
   /* flex */
   display: flex;
   justify-content: center;
@@ -75,6 +75,7 @@ body {
   margin: 0;
   font-size: 2em;
   align-self: center;
+  color: white;
 }
 
 /* Hamburger Bars */
@@ -83,9 +84,10 @@ body {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: white;
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 15px;
 }
 
 /* Rotate first bar */
@@ -112,13 +114,23 @@ body {
   left: -100%;
   /* left: 0; */
   width: 100%;
-  height: calc(100% - 60px);
+  height: calc(100vh - 60px);
   /* border: 3px solid red; */
   background-color: #557391;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ceb5a7;
+}
+
+.dropdown_flex_container {
+  width: 250px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  overflow: scroll;
   justify-content: space-evenly;
-  transition: all 0.5s ease;
+  /* border: 1px solid; */
 }
 
 .dropdown_show {
@@ -126,16 +138,35 @@ body {
   /* top: 60px; */
 }
 
-.dropdown div {
+.dropdown_flex_container div {
   /* border: 1px solid blue; */
   color: white;
   text-align: center;
   font-size: 25px;
   padding: 20px 0;
+  cursor: pointer;
 }
 
-.dropdown div a {
+.dropdown_flex_container div a {
   color: white;
+  text-decoration: none;
+}
+
+.dropdown_flex_container div:active,
+.dropdown_flex_container div:hover {
+  background-color: #ecd3c3;
+  border-radius: 40px;
+}
+
+.dropdown_flex_container div:active a,
+.dropdown_flex_container div:hover a {
+  color: #557391;
+  font-weight: 600;
+}
+
+.dropdown_flex_container div:active i,
+.dropdown_flex_container div:hover i {
+  color: #557391;
 }
 
 /* Tablet header */
@@ -208,7 +239,7 @@ body {
   top: 60px;
   bottom: 18vw;
   overflow: scroll;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: auto;
   /* Below: To make hamburger menu be on top of it */
   z-index: -1;
@@ -276,7 +307,7 @@ body {
 }
 
 /* Contact Me Section */
-.contact_me_section {
+.contact_me {
   text-align: center;
   border-top: 1px solid #34495e;
   padding: 20px 0;
@@ -366,4 +397,5 @@ textarea.contact_form_text {
 }
 
 @media only screen and (min-width: 1024px) {
+  
 }
