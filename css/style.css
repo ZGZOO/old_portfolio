@@ -28,6 +28,7 @@ body {
   /* border: 2px solid gold; */
 }
 
+/* Hide an element */
 .hide {
   display: none;
 }
@@ -38,17 +39,17 @@ body {
     "header"
     "main_content"
     "footer";
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
 }
 
 /* Mobile header */
 .header {
   /* size */
   width: 100vw;
-  height: 8vh;
+  height: 60px;
   /* General appearance */
   background-color: rgb(193, 235, 236);
-  /* border: 1px solid gold; */
+  border: 1px solid gold;
   /* flex */
   display: flex;
   justify-content: center;
@@ -59,6 +60,7 @@ body {
   top: 0;
 }
 
+/* Memoji + My name */
 .header_title_wrapper {
   display: flex;
   justify-content: center;
@@ -75,6 +77,72 @@ body {
   align-self: center;
 }
 
+/* Hamburger Bars */
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.changebar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.changebar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.changebar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.dropdown {
+  position: fixed;
+  top: 60px;
+  /* top: -100%; */
+  left: -100%;
+  /* left: 0; */
+  width: 100%;
+  height: calc(100% - 60px);
+  /* border: 3px solid red; */
+  background-color: #557391;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: all 0.5s ease;
+}
+
+.dropdown_show {
+  left: 0;
+  /* top: 60px; */
+}
+
+.dropdown div {
+  /* border: 1px solid blue; */
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 0;
+}
+
+.dropdown div a {
+  color: white;
+}
+
+/* Tablet header */
+.hamburger {
+  display: none;
+}
+
 /* https://css-tricks.com/building-resizeable-components-relative-css-units/ */
 /* https://www.smashingmagazine.com/2019/08/bottom-navigation-pattern-mobile-web-pages/ */
 /* https://www.w3schools.com/howto/howto_css_menu_icon.asp */
@@ -82,9 +150,6 @@ body {
 /* Mobile Footer Navbar */
 .footer {
   grid-area: footer;
-  position: sticky;
-  bottom: 0;
-  z-index: 1;
 }
 
 .mobile_footer_navbar {
@@ -93,7 +158,7 @@ body {
   bottom: 0;
   /* general appearance */
   width: 100vw;
-  height: 9vh;
+  height: 18vw;
   padding: 0 8px;
   background-color: rgb(190, 189, 189, 0.3);
   /* flex */
@@ -110,9 +175,10 @@ body {
 
 .mobile_footer_navbar div a {
   text-decoration: none;
-  font-size: 3.3vw;
+  font-size: 2.8vw;
   display: block;
   padding-top: 4px;
+  color: #34495e;
 }
 
 .mobile_footer_navbar div a:active {
@@ -139,11 +205,13 @@ body {
 .main_section {
   grid-area: main_content;
   position: fixed;
-  top: 78px;
-  bottom: 90px;
+  top: 60px;
+  bottom: 18vw;
   overflow: scroll;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   height: auto;
+  /* Below: To make hamburger menu be on top of it */
+  z-index: -1;
 }
 
 /* Below is how to limit scroll area */
@@ -156,16 +224,22 @@ body {
 /* About Section */
 .about {
   text-align: center;
-  border-bottom: 1px solid forestgreen;
+  border-top: 1px solid #34495e;
+  border-bottom: 1px solid #34495e;
   margin-bottom: 10px;
-  padding: 20px 0;
+  padding: 5px 0 10px 0;
+}
+
+.about section {
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* Skills Section */
 .skills {
   text-align: center;
-  border-top: 1px solid forestgreen;
-  border-bottom: 1px solid forestgreen;
+  border-top: 1px solid #34495e;
+  border-bottom: 1px solid #34495e;
   margin-bottom: 10px;
   padding: 20px 0;
 }
@@ -197,14 +271,14 @@ body {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 10px;
-  border-top: 1px solid forestgreen;
-  border-bottom: 1px solid forestgreen;
+  border-top: 1px solid #34495e;
+  border-bottom: 1px solid #34495e;
 }
 
 /* Contact Me Section */
 .contact_me_section {
   text-align: center;
-  border-top: 1px solid forestgreen;
+  border-top: 1px solid #34495e;
   padding: 20px 0;
 }
 
@@ -254,4 +328,42 @@ textarea.contact_form_text {
   background: #2980b9;
 }
 
-@media 
+.contactinfo {
+  display: none;
+}
+
+/* Media Query */
+@media only screen and (min-width: 425px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .mobile_footer_navbar {
+    display: none;
+  }
+
+  .main_section {
+    bottom: 0;
+  }
+
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .contactinfo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .contactinfo img {
+    width: 6vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+}

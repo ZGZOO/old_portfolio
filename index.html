@@ -51,7 +51,7 @@
         <h1>Hi, I'm Jenny Xu</h1>
         <!-- <h4>Web Developer | Bay Area, CA</h4> -->
         <button type="button" class="btn btn-dark" id="welcomeButton">
-          Welcome in!
+          Welcome!
         </button>
       </main>
     </div>
@@ -60,11 +60,41 @@
     <div class="official_contents_wrapper">
       <!-- header nav bar (hamburger + content) fixed (Bootstrap) at the top-->
       <header class="header">
+        <!-- https://www.w3schools.com/howto/howto_css_menu_icon.asp -->
+        <div class="hamburger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
         <div class="header_title_wrapper">
           <img src="images/mymemoji.png" alt="My Memoji" />
           <h1>Jenny Xu</h1>
         </div>
       </header>
+
+      <!-- drop down menu -->
+      <nav class="dropdown">
+        <div>
+          <i class="far fa-address-card"></i>
+          <a href="#about">ABOUT</a>
+        </div>
+
+        <div>
+          <i class="fas fa-lock-open"></i>
+          <a href="#skills">SKILLS</a>
+        </div>
+
+        <div>
+          <i class="fas fa-project-diagram"></i>
+          <a href="#projects">PROJECTS</a>
+        </div>
+
+        <div>
+          <i class="far fa-handshake"></i>
+          <a href="#contact_me">CONTACT</a>
+        </div>
+      </nav>
 
       <!-- main section -->
       <main class="main_section">
@@ -72,8 +102,9 @@
         <div class="about" id="about">
           <h4>About</h4>
           <section>
-            Keyboard is my paint,<br />Editor is my canvas,<br />Website is my
-            mind
+            Hi, I am Jenny! A web developer from San Jose, California. I love
+            making beautiful and easy-to-use websites. When I am not coding, you
+            will find me cooking my favourite dishes.
           </section>
         </div>
         <!-- Skills section -->
@@ -144,6 +175,32 @@
             ></textarea>
             <input type="submit" class="contact_form_button" value="Send" />
           </form>
+
+          <nav class="contactinfo">
+            <a href="mailto:jennyxu000@gmail.com" target="_blank" id="email"
+              ><img
+                src="images/email.svg"
+                alt="Jenny Xu's Gmail"
+                title="Jenny Xu's Gmail"
+            /></a>
+
+            <a href="https://github.com/ZGZOO" target="_blank" id="github"
+              ><img
+                src="images/github.svg"
+                alt="Jenny Xu's GitHub page"
+                title="Jenny Xu's GitHub page"
+            /></a>
+
+            <a
+              href="https://www.linkedin.com/in/jennyzhijiexu/"
+              target="_blank"
+              id="linkedin"
+              ><img
+                src="images/linkedin.svg"
+                alt="Jenny Xu's LinkedIn page"
+                title="Jenny Xu's LinkedIn page"
+            /></a>
+          </nav>
         </div>
       </main>
 
@@ -152,27 +209,27 @@
         <nav class="mobile_footer_navbar">
           <div>
             <i class="far fa-address-card"></i>
-            <a href="#about">About</a>
+            <a href="#about">ABOUT</a>
           </div>
 
           <div>
             <i class="fas fa-lock-open"></i>
-            <a href="#skills">Skills</a>
+            <a href="#skills">SKILLS</a>
           </div>
 
           <div>
             <i class="fas fa-project-diagram"></i>
-            <a href="#projects">Projects</a>
+            <a href="#projects">PROJECTS</a>
           </div>
 
           <div>
             <i class="far fa-handshake"></i>
-            <a href="#contact_me">Contact</a>
+            <a href="#contact_me">CONTACT</a>
           </div>
 
           <div>
             <i class="fas fa-people-arrows"></i>
-            <a href="#social">Social</a>
+            <a href="#social">SOCIAL</a>
           </div>
         </nav>
       </footer>
