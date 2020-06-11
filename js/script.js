@@ -97,8 +97,10 @@ $(() => {
           image: project.gsx$image.$t,
           description: project.gsx$description.$t,
           url: project.gsx$url.$t,
+          livepage: project.gsx$livepage.$t,
         };
       }); //map ends
+      console.log("projects", projects);
       app(projects);
       //console.log("projects", projects);
     })
@@ -106,14 +108,19 @@ $(() => {
     .catch((err) => console.log("err", err));
 
   function app(projectsArr) {
-    console.log("inside app - projectsArr", projectsArr);
-    projectsArr.forEach((project) => {
-      //create an h3
-      let title = $("<h3>");
-      //assign the title the value stored in project.title
-      title.text(project.title);
-      //append the title to the body
-      $("body").append(title);
+    // console.log("inside app - projectsArr", projectsArr);
+    projectsArr.forEach((project, index) => {
+      let $section = $(`<section class="project_item">
+                          <h3>${project.title}</h3>
+                          <div class="proj_img" style="background-image:url(${project.image})"></div>
+                          <div class="proj_descript">${project.description}</div>
+                          <div class="see_code_btn">
+                            <a href="${project.url}" target="_blank">Real Codes</a>
+                            <a href="${project.livepage}" target="_blank">Live Page</a>
+                          </div>
+                        </section>`);
+      $(".project_grid_container").append($section);
+      console.log(project);
     });
   }
 });
