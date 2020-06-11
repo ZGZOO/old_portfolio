@@ -2,7 +2,12 @@
 
 * {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
+}
+
+html {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -419,7 +424,6 @@ textarea.contact_form_text {
 
   .laptop_navbar_container {
     display: flex;
-    width: 35%;
   }
 
   .laptop_navbar_container div {
