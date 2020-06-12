@@ -667,6 +667,7 @@ textarea.contact_form_text {
     top: 90px;
   }
 
+  /* laptop nav bar */
   .laptop_navbar_container {
     display: flex;
   }
@@ -674,7 +675,7 @@ textarea.contact_form_text {
   .laptop_navbar_container div {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 2vw;
     padding: 8px;
     margin: 0 13px;
     flex: 1 1;
@@ -688,6 +689,25 @@ textarea.contact_form_text {
     color: #557391;
     border-radius: 30px;
     /* font-weight: bold; */
+  }
+
+  /* header */
+  .header {
+    height: 7vw;
+  }
+
+  /* header name title */
+  .header_title_wrapper {
+    padding-left: 2vw;
+  }
+
+  .header_title_wrapper img {
+    width: 4vw;
+  }
+
+  .header_title_wrapper h1 {
+    margin: 0;
+    font-size: 3vw;
   }
 
   /* about section */
