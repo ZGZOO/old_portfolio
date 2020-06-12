@@ -60,14 +60,14 @@ $(() => {
 
   $skills_btn.on("click", () => {
     $(".main_section").animate(
-      { scrollTop: $("#skills").offset().top - 60 },
+      { scrollTop: $("#skills").offset().top - 120 },
       500
     );
   });
 
   $projects_btn.on("click", () => {
     $(".main_section").animate(
-      { scrollTop: $("#projects").offset().top - 60 },
+      { scrollTop: $("#projects").offset().top - 120 },
       500
     );
   });
