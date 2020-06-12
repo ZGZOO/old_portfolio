@@ -84,16 +84,18 @@ Time frames are also key in the development cycle. You have limited time to code
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
 | Hamburger               |    H     |     1.5hr      |      -hr      |     3hr     |
+| Slide Menu              |    H     |     2hr        |      -hr      |     3hr     |
+| Mobile Nav              |    H     |     1.5hr      |      -hr      |     4hr     |
 | Regular Nav             |    H     |     1.5hr      |      -hr      |     2hr     |
 | Entrance animation      |    H     |      2hr       |      -hr      |    1.5hr    |
-| Smooth scrolls          |    H     |      2hr       |      -hr      |     1hr     |
-| Project Previews        |    H     |      3hr       |      -hr      |     3hr     |
-| Contact Me Form         |    H     |     1.5hr      |      -hr      |     0.5hr   |
+| Smooth scrolls          |    H     |      2hr       |      -hr      |    1.5hr    |
+| Project Previews        |    H     |      3hr       |      -hr      |     4hr     |
+| Contact Me Form         |    H     |     1.5hr      |      -hr      |     1hr     |
 | Working with API        |    H     |      3hr       |      -hr      |     3hr     |
 | Responsive              |    H     |      3hr       |      -hr      |     5hr     |
-| Other sections and flex |    M     |      2hr       |      -hr      |     2hr     |
+| Other sections and flex |    M     |      2hr       |      -hr      |     2.5hr   |
 | Social Media Icons      |    L     |     0.5hr      |      -hr      |     0.5hr   |
-| Total                   |    H     |     20hrs      |     -hrs      |    21.5hrs  |
+| Total                   |    H     |     20hrs      |     -hrs      |    31hrs    |
 
 #### PostMVP
 
