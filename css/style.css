@@ -313,7 +313,7 @@ body {
   width: 25vh;
   height: 25vh;
   margin: 10px auto;
-  background-image: url("images/myface.png");
+  background-image: url("../images/myface.png");
   background-size: cover;
   background-position: 10% 40%;
   border-radius: 50%;
