@@ -237,6 +237,7 @@ body {
 
 /* social button drop up menu */
 /* The container <div> - needed to position the dropup content */
+/* https://www.w3schools.com/howto/howto_css_dropup.asp */
 .drop_up {
   position: relative;
   display: inline-block;
@@ -317,8 +318,8 @@ body {
 }
 
 .about .myface {
-  width: 25vh;
-  height: 25vh;
+  width: 60vw;
+  height: 60vw;
   margin: 10px auto;
   background-image: url("../images/myface.png");
   background-size: cover;
@@ -328,8 +329,19 @@ body {
   box-shadow: 0 0 0 3.5px white, 0 0 0 5.5px #34495e;
 }
 
-.about section {
+.about_grid_container section {
   margin: 10px 15px 0 15px;
+}
+
+.about_grid_container section {
+  line-height: 6vw;
+  font-size: 3.5vw;
+  margin-top: 3vw;
+}
+
+.about_grid_container section span {
+  line-height: 12vw;
+  font-size: 5vw;
 }
 
 /* Skills Section */
@@ -337,8 +349,11 @@ body {
   text-align: center;
   border-top: 1px solid #34495e;
   border-bottom: 1px solid #34495e;
-  margin-bottom: 10px;
   padding: 20px 0;
+}
+
+.skills h4 {
+  padding-bottom: 3vw;
 }
 
 .skills_wrapper {
@@ -360,16 +375,18 @@ body {
 }
 
 .skills_wrapper div div {
-  font-size: 3vh;
+  font-size: 4.5vw;
 }
 
 /* Projects Section */
 .projects {
   text-align: center;
-  background-image: url("https://images.unsplash.com/photo-1555181937-efe4e074a301?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  padding: 20px 0;
+  background-color: #f1f0e4;
+  /* background-image: url("https://images.unsplash.com/photo-1555181937-efe4e074a301?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 
 .project_item {
@@ -498,6 +515,26 @@ textarea.contact_form_text {
     cursor: pointer;
   }
 
+  /* about section */
+  .about {
+    padding: 4vw 0 7vw 0;
+  }
+
+  .about .myface {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .about_grid_container section {
+    line-height: 4vw;
+    font-size: 2.8vw;
+  }
+
+  .about_grid_container section span {
+    line-height: 6.8vw;
+    font-size: 4vw;
+  }
+
   /* projects section */
   .project_item {
     margin: 5vw 8vw;
@@ -542,7 +579,7 @@ textarea.contact_form_text {
 }
 
 @media only screen and (min-width: 768px) {
-  /* for projects */
+  /* projects section*/
   .project_grid_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -641,5 +678,120 @@ textarea.contact_form_text {
     color: #557391;
     border-radius: 30px;
     /* font-weight: bold; */
+  }
+
+  /* about section */
+  .about .myface {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .about_grid_container section {
+    line-height: 2.7vw;
+    font-size: 1.4vw;
+    margin-top: 3vw;
+  }
+
+  .about_grid_container section span {
+    line-height: 4vw;
+    font-size: 2vw;
+  }
+
+  /* skills section */
+  .skills {
+    padding: 1vw 0 4vw 0;
+  }
+
+  .skills h4 {
+    font-size: 6vw;
+    padding: 2vw 0 5vw 0;
+  }
+
+  .skills_wrapper div {
+    width: 25%;
+  }
+
+  .skills_wrapper div i {
+    font-size: 13vh;
+  }
+
+  .skills_wrapper div div {
+    font-size: 2.8vw;
+  }
+
+  /* projects section*/
+  .projects h4 {
+    font-size: 5vw;
+    margin: 0;
+    padding: 1vw 0 5vw 0;
+  }
+
+  .project_grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #proj1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #proj2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #proj3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  #proj4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #proj5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #proj6 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .project_item {
+    padding: 0;
+    margin: 10px auto;
+    width: 30vw;
+    height: 26vw;
+    border-radius: 1.3vw;
+  }
+
+  .project_item h3 {
+    font-size: 1.5vw;
+    margin-top: 1.3vw;
+  }
+
+  .proj_img {
+    height: 13vw;
+  }
+
+  .proj_descript {
+    font-size: 1.2vw;
+    padding: 1vw 0;
+  }
+
+  .see_code_btn a {
+    border-radius: 0.8vw;
+    font-size: 1.2vw;
+    padding: 1vw 0.1vw;
+  }
+
+  .see_code_btn a:hover {
+    color: #ad343e;
+  }
+
+  /* Contact Section */
+  .contact_me h4 {
+    font-size: 3vw;
+    padding: 2vw 0;
   }
 }
