@@ -234,6 +234,43 @@ body {
   color: red;
 }
 
+/* social button drop up menu */
+/* The container <div> - needed to position the dropup content */
+.drop_up {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup_content {
+  position: absolute;
+  bottom: calc(18vw);
+  max-width: 20vw;
+  z-index: 1;
+  display: none;
+}
+
+/* Links inside the dropup */
+.dropup_content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup_content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropup menu on hover */
+.drop_up:hover .dropup_content {
+  display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.drop_up:hover .social_btn {
+  background-color: #2980b9;
+}
+
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
 /* set height variable */
 /* :root {
@@ -368,7 +405,7 @@ body {
   flex: 1 1;
   border-radius: 5px;
   margin: 0 10px;
-  padding: 5px;
+  padding: 10px 5px;
   background-color: #ecd3c3;
 }
 
@@ -452,6 +489,32 @@ textarea.contact_form_text {
     cursor: pointer;
   }
 
+  /* projects section */
+  .project_item {
+    margin: 5vw 8vw;
+    padding: 3vw;
+    border-radius: 3vw;
+  }
+
+  .project_item h3 {
+    font-size: 4.6vw;
+  }
+
+  .proj_img {
+    height: 40vw;
+  }
+
+  .proj_descript {
+    font-size: 3vw;
+  }
+
+  .see_code_btn a {
+    border-radius: 1vw;
+    font-size: 2.5vw;
+    padding: 2vw;
+  }
+
+  /* contact me section */
   .contactinfo {
     margin-top: 40px;
     display: flex;
@@ -459,9 +522,17 @@ textarea.contact_form_text {
     align-items: center;
   }
 
+  .contactinfo img:hover {
+    filter: invert(31%) sepia(3%) saturate(5123%) hue-rotate(171deg)
+      brightness(93%) contrast(89%);
+  }
+
   .contactinfo img {
     width: 6vw;
   }
+}
+
+@media only screen and (min-width: 768px) {
 }
 
 @media only screen and (min-width: 1024px) {
