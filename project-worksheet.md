@@ -8,12 +8,12 @@ I am **responsible** for scheduling time with my squad to seek approval for each
 
 | Day   | Deliverable                                  | Status     |
 | ----- | -------------------------------------------- | ---------- |
-| Day 1 | Project Description                          | Incomplete |
-| Day 1 | Wireframes / Priority Matrix / Timeline      | Incomplete |
-| Day 2 | Core Application Structure (HTML, CSS, etc.) | Incomplete |
-| Day 3 | MVP & Bug Fixes                              | Incomplete |
-| Day 4 | Final Touches                                | Incomplete |
-| Day 5 | Present                                      | Incomplete |
+| Day 1 | Project Description                          | Complete |
+| Day 1 | Wireframes / Priority Matrix / Timeline      | Complete |
+| Day 2 | Core Application Structure (HTML, CSS, etc.) | Complete |
+| Day 3 | MVP & Bug Fixes                              | Complete |
+| Day 4 | Final Touches                                | Complete |
+| Day 5 | Present                                      | Complete |
 
 ## Project Description
 
@@ -83,26 +83,28 @@ Time frames are also key in the development cycle. You have limited time to code
 
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
-| Hamburger               |    H     |     1.5hr      |      -hr      |     -hr     |
-| Regular Nav             |    H     |     1.5hr      |      -hr      |     -hr     |
-| Entrance animation      |    H     |      2hr       |     1.5hr     |    1.5hr    |
-| Smooth scrolls          |    H     |      2hr       |      -hr      |     -hr     |
-| Project Previews        |    H     |      3hr       |      -hr      |     -hr     |
-| Contact Me Form         |    H     |     1.5hr      |      -hr      |     -hr     |
-| Working with API        |    H     |      3hr       |      -hr      |     -hr     |
-| Responsive              |    H     |      3hr       |      -hr      |     -hr     |
-| Other sections and flex |    M     |      2hr       |      -hr      |     -hr     |
-| Social Media Icons      |    L     |     0.5hr      |      -hr      |     -hr     |
-| Total                   |    H     |     20hrs      |     -hrs      |    -hrs     |
+| Hamburger               |    H     |     1.5hr      |      -hr      |     3hr     |
+| Slide Menu              |    H     |     2hr        |      -hr      |     3hr     |
+| Mobile Nav              |    H     |     1.5hr      |      -hr      |     4hr     |
+| Regular Nav             |    H     |     1.5hr      |      -hr      |     2hr     |
+| Entrance animation      |    H     |      2hr       |      -hr      |    1.5hr    |
+| Smooth scrolls          |    H     |      2hr       |      -hr      |    1.5hr    |
+| Project Previews        |    H     |      3hr       |      -hr      |     4hr     |
+| Contact Me Form         |    H     |     1.5hr      |      -hr      |     1hr     |
+| Working with API        |    H     |      3hr       |      -hr      |     3hr     |
+| Responsive              |    H     |      3hr       |      -hr      |     5hr     |
+| Other sections and flex |    M     |      2hr       |      -hr      |     2.5hr   |
+| Social Media Icons      |    L     |     0.5hr      |      -hr      |     0.5hr   |
+| Total                   |    H     |     20hrs      |     -hrs      |    31hrs    |
 
 #### PostMVP
 
 | Component        | Priority | Estimated Time | Time Invetsted | Actual Time |
 | ---------------- | :------: | :------------: | :------------: | :---------: |
-| Bootstrap        |    H     |      4hr       |      -hr       |     -hr     |
-| Button Animation |    L     |      1hr       |      -hr       |     -hr     |
-| Make own icon    |    L     |      2hr       |      -hr       |     -hr     |
-| Total            |    H     |      7hrs      |      -hrs      |    -hrs     |
+| Bootstrap        |    H     |      4hr       |      -hr       |     1hr     |
+| Button Animation |    L     |      1hr       |      -hr       |     3hr     |
+| Make own icon    |    L     |      2hr       |      -hr       |     0hr     |
+| Total            |    H     |      7hrs      |      -hrs      |    4hrs     |
 
 ## Additional Libraries
 
@@ -119,8 +121,45 @@ Use this section to include a brief code snippet of functionality that you are p
 //Challenge
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+.drop_up {
+  position: relative;
+  display: inline-block;
+}
+
+.dropup_content {
+  background-color: #eaeaea;
+  position: absolute;
+  right: 1px;
+  bottom: calc(-36vw);
+  min-width: 19vw;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px 0;
+  /* display: none; */
+}
+
+/* Show the dropup menu on hover */
+.dropup_content_show {
+  opacity: 1;
+  bottom: calc(15.2vw);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup_content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  flex: 1 1;
+}
+
+#github {
+  margin: 20px 0;
 }
 ```
 
