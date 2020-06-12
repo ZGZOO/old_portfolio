@@ -119,35 +119,45 @@ Use this section to include a brief code snippet of functionality that you are p
 //Challenge
 
 ```
-.dropdown {
-  position: fixed;
-  top: 60px;
-  /* top: -100%; */
-  left: -100%;
-  /* left: 0; */
-  width: 100%;
-  height: calc(100vh - 60px);
-  /* border: 3px solid red; */
-  background-color: #557391;
-  transition: all 0.5s ease;
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid #ceb5a7;
+.drop_up {
+  position: relative;
+  display: inline-block;
 }
 
-.dropdown_flex_container {
-  width: 250px;
+.dropup_content {
+  background-color: #eaeaea;
+  position: absolute;
+  right: 1px;
+  bottom: calc(-36vw);
+  min-width: 19vw;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.6s ease-out;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  overflow: scroll;
-  justify-content: space-evenly;
-  /* border: 1px solid; */
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px 0;
+  /* display: none; */
 }
 
-.dropdown_show {
-  left: 0;
-  /* top: 60px; */
+/* Show the dropup menu on hover */
+.dropup_content_show {
+  opacity: 1;
+  bottom: calc(15.2vw);
+  z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup_content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  flex: 1 1;
+}
+
+#github {
+  margin: 20px 0;
 }
 ```
 
