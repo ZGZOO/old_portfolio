@@ -14,6 +14,8 @@ $(() => {
   const $skills_btn = $(".skills_btn");
   const $projects_btn = $(".projects_btn");
   const $contact_btn = $(".contact_btn");
+  const $social_btn = $(".drop_up");
+  const $social_media = $(".dropup_content");
 
   // $official_contents.hide();
   $entrance_page.hide();
@@ -24,6 +26,11 @@ $(() => {
       $official_contents.show();
       // console.log("clicked?");
     });
+  });
+
+  //social button clicks and drops up
+  $social_btn.on("click", () => {
+    $social_media.toggleClass("dropup_content_show");
   });
 
   // hamburger open animation
@@ -110,13 +117,21 @@ $(() => {
   function app(projectsArr) {
     // console.log("inside app - projectsArr", projectsArr);
     projectsArr.forEach((project, index) => {
-      let $section = $(`<section class="project_item">
-                          <h3>${project.title}</h3>
-                          <div class="proj_img" style="background-image:url(${project.image})"></div>
-                          <div class="proj_descript">${project.description}</div>
+      let $section = $(`<section class="project_item" id="proj${index + 1}">
+                          <h3 class="proj_title">${project.title}</h3>
+                          <div class="proj_img" style="background-image:url(${
+                            project.image
+                          })"></div>
+                          <div class="proj_descript">${
+                            project.description
+                          }</div>
                           <div class="see_code_btn">
-                            <a href="${project.url}" target="_blank">Real Codes</a>
-                            <a href="${project.livepage}" target="_blank">Live Page</a>
+                            <a href="${
+                              project.url
+                            }" target="_blank">Real Codes <i class="fas fa-code"></i></a>
+                            <a href="${
+                              project.livepage
+                            }" target="_blank">Live Page <i class="fas fa-wifi"></i></a>
                           </div>
                         </section>`);
       $(".project_grid_container").append($section);

@@ -219,10 +219,11 @@ body {
   display: block;
   padding-top: 4px;
   color: #34495e;
+  font-weight: 500;
 }
 
 .mobile_footer_navbar div a:active {
-  border-bottom: 2px solid blueviolet;
+  font-weight: 700;
 }
 
 .mobile_footer_navbar div i {
@@ -231,7 +232,7 @@ body {
 }
 
 .mobile_footer_navbar div i:active {
-  color: red;
+  color: #557391;
 }
 
 /* social button drop up menu */
@@ -242,11 +243,27 @@ body {
 }
 
 .dropup_content {
+  background-color: #eaeaea;
   position: absolute;
-  bottom: calc(18vw);
-  max-width: 20vw;
+  right: 1px;
+  bottom: calc(-36vw);
+  min-width: 19vw;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: 10px 0;
+  /* display: none; */
+}
+
+/* Show the dropup menu on hover */
+.dropup_content_show {
+  opacity: 1;
+  bottom: calc(15.2vw);
   z-index: 1;
-  display: none;
 }
 
 /* Links inside the dropup */
@@ -254,21 +271,11 @@ body {
   color: black;
   text-decoration: none;
   display: block;
+  flex: 1 1;
 }
 
-/* Change color of dropup links on hover */
-.dropup_content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropup menu on hover */
-.drop_up:hover .dropup_content {
-  display: block;
-}
-
-/* Change the background color of the dropup button when the dropup content is shown */
-.drop_up:hover .social_btn {
-  background-color: #2980b9;
+#github {
+  margin: 20px 0;
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -366,13 +373,13 @@ body {
 }
 
 .project_item {
-  background-color: #557391;
+  background-color: rgba(85, 115, 145, 0.7);
   margin: 25px 20px;
   padding: 10px;
   border-radius: 10px;
 }
 
-.project_item h3 {
+.proj_title {
   font-size: 20px;
 }
 
@@ -388,6 +395,7 @@ body {
 
 .proj_descript {
   font-size: 15px;
+  font-weight: 400;
   padding: 13px 0;
 }
 
@@ -401,6 +409,7 @@ body {
   text-decoration: none;
   text-align: center;
   font-size: 12px;
+  font-weight: 500;
   color: black;
   flex: 1 1;
   border-radius: 5px;
@@ -533,6 +542,65 @@ textarea.contact_form_text {
 }
 
 @media only screen and (min-width: 768px) {
+  /* for projects */
+  .project_grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #proj1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #proj2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #proj3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #proj4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  #proj5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #proj6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+
+  .project_item {
+    padding: 0;
+    margin: 10px auto;
+    width: 45vw;
+    height: 37vw;
+    border-radius: 1.5vw;
+  }
+
+  .project_item h3 {
+    font-size: 3vw;
+    margin-top: 1.3vw;
+  }
+
+  .proj_img {
+    height: 20vw;
+  }
+
+  .proj_descript {
+    font-size: 1.7vw;
+    padding: 1vw 0;
+  }
+
+  .see_code_btn a {
+    border-radius: 1vw;
+    font-size: 1.5vw;
+    padding: 1vw;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
