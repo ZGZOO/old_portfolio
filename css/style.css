@@ -33,6 +33,15 @@ body {
   /* border: 2px solid gold; */
 }
 
+.entrance_page main h1 {
+  font-size: 8vw;
+}
+
+.entrance_page main button {
+  margin-top: 8vw;
+  font-size: 4vw;
+}
+
 /* Hide an element */
 .hide {
   display: none;
@@ -350,6 +359,7 @@ body {
   border-top: 1px solid #34495e;
   border-bottom: 1px solid #34495e;
   padding: 20px 0;
+  background-color: #f4f6f6;
 }
 
 .skills h4 {

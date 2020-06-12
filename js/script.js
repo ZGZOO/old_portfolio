@@ -17,8 +17,8 @@ $(() => {
   const $social_btn = $(".drop_up");
   const $social_media = $(".dropup_content");
 
-  // $official_contents.hide();
-  $entrance_page.hide();
+  $official_contents.hide();
+  // $entrance_page.hide();
 
   $welcome_button.on("click", () => {
     // Slide up animation: entrance page gone, official contents appear
