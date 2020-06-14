@@ -17,7 +17,7 @@ I am **responsible** for scheduling time with my squad to seek approval for each
 
 ## Project Description
 
-This project is my portfolio as a SPA (single page app), containing my about, my skills, my projects and a section to contact me!
+This project is my portfolio as a SPA (single page app), containing about me, my skills, my projects and a section to contact me!
 
 Entrance animation inspired by [Haley's portfolio](https://hbubley.github.io/unitOneProject/projectFrame/)
 
@@ -65,13 +65,13 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - (Mobile, Tablet) Projects section, click each card, then skill used, live page button, github source button will appear
 - (Laptop) Projects section, hover on each card, then skill used, live page button, github source button will appear
 - Contact me section, little animation when the users are about to type in their information
-- A convenient button for users to go to the top of the page smoothly
 
 #### PostMVP
 
 - Use Bootstrap
 - Button Animation with cool effects
 - Make my own icon to add personality to the webpage
+- A convenient button for users to go to the top of the page smoothly
 
 ## Functional Components
 
@@ -117,8 +117,8 @@ Here is the list of all supporting libraries and their roles in the project.
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description
-//Talking point
-//Challenge
+
+The following is the css for the drop up menu for my social button in mobile size.
 
 ```
 .drop_up {
@@ -168,7 +168,7 @@ Use this section to include a brief code snippet of functionality that you are p
 This section is to list of all major issues encountered and their resolution.
 
 **ERROR**: jQuery on click no response
-**RESOLUTION**: put code in jQuery Window Onload \$(()=>{})
+**RESOLUTION**: Put all the codes in jQuery Window Onload function block: $(()=>{})
 
-**ERROR**:
-**RESOLUTION**:
+**ERROR**: Can't pull data(my projects list) using google json api
+**RESOLUTION**: Remember to publish the google sheet to the web first!
