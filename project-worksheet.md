@@ -171,6 +171,7 @@ This section is to list of all major issues encountered and their resolution.
 
 **RESOLUTION**: Put all the codes in jQuery Window Onload function block: $(()=>{})
 
+
 **ERROR**: Can't pull data(my projects list) using google json api
 
 **RESOLUTION**: Remember to publish the google sheet to the web first!
